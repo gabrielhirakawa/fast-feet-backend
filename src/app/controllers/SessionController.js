@@ -11,13 +11,7 @@ class SessionController {
 
         const user = await User.findOne({
             where: { email }
-            //   include: [
-            //     {
-            //       model: File,
-            //       as: "avatar",
-            //       attributes: ["id", "path", "url"]
-            //     }
-            //   ]
+
         });
 
         if (!user) {
@@ -26,7 +20,7 @@ class SessionController {
         if (!(await user.checkPassword(password))) {
             return res.status(401).json({ error: "Password does not mach" });
         }
-        console.log('chego uaqui')
+
         const { id, name } = user;
 
         return res.json({
