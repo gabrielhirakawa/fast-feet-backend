@@ -1,6 +1,6 @@
 # Projeto backend do desafio FAST FEET.
 
-## :truck: :dash: Sobre
+## :truck: Sobre
 Projeto desenvolvido em node.js para conclusão do bootcamp da rocketseat, **GoStack** :rocket: </br>
 O *FastFeet* é um app para uma transportadora fictícia.
 
@@ -25,10 +25,13 @@ yarn dev ou npm run dev
 
 ## Rotas
 ```
-...
+\health
+\users
+\sessions
+\recipient
 ```
 
 
-### :boy: Autor
+### :octocat: Autor
 Projeto desenvolvido por **Gabriel Hirakawa**. 2020 :date:
 
